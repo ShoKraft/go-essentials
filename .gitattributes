@@ -1,0 +1,6 @@
+# Go-модуль и сумма — всегда только LF
+go.mod    text eol=lf
+go.sum    text eol=lf
+
+# Все го-файлы тоже лучше с LF (очень рекомендуется)
+*.go      text eol=lf
