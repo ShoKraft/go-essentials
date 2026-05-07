@@ -2,7 +2,7 @@ package bit_tricks
 
 import "fmt"
 
-// Где реально применяется n % (2^power) через & 
+// Где реально применяется n % (2^power) через &
 /*
 
 	Хэш-таблицы (HashMap) - Чтобы получить индекс корзины: hash & (size-1)
@@ -22,6 +22,10 @@ import "fmt"
 // FastModPowerOfTwo возвращает n % (2^power) очень быстро через битовые операции
 
 func FastModPowerOfTwo(n uint64, power uint) uint64 {
+
+	if power == 0 {
+		return 0
+	}
 
 	// Проверка, чтобы power не был слишком большим (максимум 63 для uint64)
 

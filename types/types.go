@@ -2,6 +2,7 @@ package types
 
 import (
 	"fmt"
+	"math"
 	"math/cmplx"
 )
 
@@ -67,7 +68,7 @@ func TypesExample() {
 
 	var u uint = 42
 	_ = u
-	var u64 uint64 = 18446744073709551615 // максимальное значение uint64
+	var u64 uint64 = math.MaxUint64 // максимальное значение uint64
 
 	var u8 uint8 = 255 // часто используется как byte
 	_ = u8
