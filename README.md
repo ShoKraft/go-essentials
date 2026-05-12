@@ -16,14 +16,15 @@ This repository contains essential code snippets and utilities that every seriou
 
 ## Project Structure
 
-| File / Folder                    | Description                                                                 | Importance |
-|-------------------------------|-----------------------------------------------------------------------------|----------|
-| `complex/complex.go`          | `PrettyComplex(z complex128) string` — beautiful formatting of complex numbers | Essential for scientific computing, DSP, physics simulations and graphics. Clean output (`3 + 4i`, `-2i`, `1.5 - 0.7i`) greatly improves debugging and logging. |
-| `bit_tricks/bit_tricks.go`    | Fast bitwise operations (power-of-two modulo, etc.)                        | Critical for high-performance code: hash maps, buffers, allocators, game engines. |
-| `types/types.go`              | Overview and best practices for all Go built-in types                      | Helps avoid common mistakes with `int` vs `int64`, `byte`, `rune`, `any`, etc. |
-| `constatns/constants.go`      | Human-readable byte formatting + constants (`KB`, `MB`, `GB`...)           | Very useful for logging memory usage, file sizes, and network statistics. |
-| `main.go`                     | Demo of all utilities                                                      | Quick showcase of the library. |
-| `go.mod`                      | Go module file                                                             | Standard project setup. |
+| File / Folder                    | Description                                                                    | Importance                                                                                                                                                      |
+| -------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `complex/complex.go`             | `PrettyComplex(z complex128) string` — beautiful formatting of complex numbers | Essential for scientific computing, DSP, physics simulations and graphics. Clean output (`3 + 4i`, `-2i`, `1.5 - 0.7i`) greatly improves debugging and logging. |
+| `bit_tricks/bit_tricks.go`       | Fast bitwise operations (power-of-two modulo, etc.)                            | Critical for high-performance code: hash maps, buffers, allocators, game engines.                                                                               |
+| `types/types.go`                 | Overview and best practices for all Go built-in types                          | Helps avoid common mistakes with `int` vs `int64`, `byte`, `rune`, `any`, etc.                                                                                  |
+| `constatns/constants.go`         | Human-readable byte formatting + constants (`KB`, `MB`, `GB`...)               | Very useful for logging memory usage, file sizes, and network statistics.                                                                                       |
+| `any_processor/any_processor.go` | Universal any processor file                                                   | Used in 90% of production Go services.                                                                                                                          |
+| `main.go`                        | Demo of all utilities                                                          | Quick showcase of the library.                                                                                                                                  |
+| `go.mod`                         | Go module file                                                                 | Standard project setup.                                                                                                                                         |
 
 ---
 
@@ -56,3 +57,4 @@ Error handling patterns
 
 Made with ❤️ for the Go community
 Last updated: May 2026
+```
